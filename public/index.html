@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برنامه تمرینی AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🦾 برنامه تمرینی هوش مصنوعی</h1>
+  <form id="fitnessForm">
+    <label>جنسیت:
+      <select id="gender">
+        <option value="مرد">مرد</option>
+        <option value="زن">زن</option>
+      </select>
+    </label>
+    <label>قد (سانتی‌متر):
+      <input type="number" id="height" required>
+    </label>
+    <label>وزن (کیلوگرم):
+      <input type="number" id="weight" required>
+    </label>
+    <button type="submit">گرفتن برنامه</button>
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
