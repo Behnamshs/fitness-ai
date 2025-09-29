@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مربی هوش مصنوعی - واقعی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🤖 مربی تمرینی (AI)</h1>
+    <form id="workoutForm" class="card">
+      <div class="row">
+        <label>قد (cm)</label>
+        <input type="number" id="height" required />
+      </div>
+      <div class="row">
+        <label>وزن (kg)</label>
+        <input type="number" id="weight" required />
+      </div>
+      <div class="row">
+        <label>جنسیت</label>
+        <select id="gender">
+          <option value="مرد">مرد</option>
+          <option value="زن">زن</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>هدف</label>
+        <select id="goal">
+          <option value="عضله‌سازی">عضله‌سازی</option>
+          <option value="چربی‌سوزی">چربی‌سوزی</option>
+          <option value="تناسب اندام">تناسب اندام</option>
+        </select>
+      </div>
+      <button type="submit" id="submitBtn">دریافت برنامه</button>
+    </form>
+
+    <section id="result" class="card result"></section>
+    <p class="notes">برای اجرا: <br> ۱) <code>npm install</code> <br> ۲) در فایل <code>.env</code> کلید OpenAI را بگذار <br> ۳) <code>npm start</code> <br> سپس در مرورگر <code>http://localhost:3000</code></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
